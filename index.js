@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.post('/guardar', async (req, res) => {
   try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbyoTJ8My1z25KDMnrBDvlNLA5y5ha9lxY8BLhLV7e04xtQW7QV5GKVVWsvIDMOm0S2I/exec', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbwR4e1B3Zf3ARzDXinL4AsbGIRC-bjeeRqYvtHNMNeAIqW5EcAoBk3wnfSX2jjf2m8m/exec', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(req.body)

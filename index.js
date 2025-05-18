@@ -12,7 +12,7 @@ app.use(express.json());
 // Ruta proxy para reenviar al Apps Script
 app.post('/guardar', async (req, res) => {
   try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbx_MTDEuwlu3llv1t4OSF0GxmbxTXs5G5-Z.../exec', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbxMTDEuwlu3llv1t4OSF0GxmbXTx5G5-ZDUzGGVi13of82KkCaXvWiinfCCs6y/exec', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(req.body)
